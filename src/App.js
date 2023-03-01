@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+
+import '../src/index.css'
+import Search from './component/search/search';
 
 function App() {
+  const handleOnSearchChange = () =>
+  {
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Search onSearchChange={handleOnSearchChange}></Search>
     </div>
   );
 }
